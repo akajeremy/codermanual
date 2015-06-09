@@ -7,6 +7,7 @@ gem 'sqlite3', group: [:development, :test]
 gem 'bootstrap-sass', '3.3.4.1'
 gem 'sass-rails', '5.0.3'
 gem 'font-awesome-sass', '4.2.0'
+gem 'devise'
 
 # Use postgresql as the database for production
 group :production do
@@ -33,11 +34,3 @@ gem 'sdoc', '0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '3.1.7'
-# Use unicorn as the app server
-# gem 'unicorn'
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-# Use debugger
-# gem 'debugger', group: [:development, :test]
