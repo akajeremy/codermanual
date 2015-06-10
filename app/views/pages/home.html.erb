@@ -1,7 +1,28 @@
 <div class="jumbotron">
 <h1>Pages#home</h1>
-<p>Rough Draft of social app</p></div>
+<p>Rough Draft of Social App</p>
 </div>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="well">
+			<h2 class="text-center">Basic Membership</h2>
+			<h4>Sign up for free and get basic access to our community.</h4>
+		</br>
+			<%= link_to "Sign up free", new_user_registration_path(plan: @basic_plan.id), class: "btn btn-primary btn-lg btn-block" %>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="well">
+			<h2 class="text-center">Pro Membership</h2>
+			<h4>Sign up for the pro account and get access to the contact information for only $10/month!</h4>
+			<%= link_to "Sign up for Pro Account", new_user_registration_path(plan: @pro_plan.id), class: "btn btn-success btn-lg btn-block" %>
+		</div>
+	</div>
+</div>
+
+
+
 <!--
 <div class="bubble container"> 
 	<div class="embed-responsive embed-responsive-16by9">
@@ -24,5 +45,5 @@
 		</a>
 		</div>
 	</div>
-</div> <!--container close--> -->
+</div> <!--container close--> 
 
